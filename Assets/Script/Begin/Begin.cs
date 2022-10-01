@@ -60,7 +60,7 @@ public class Begin : MonoBehaviour
         if (!Static_mode)
         {
             StaticTime += Time.deltaTime;
-            Debug.Log(StaticTime);
+            //Debug.Log(StaticTime);
         }
 
         if (Hi)

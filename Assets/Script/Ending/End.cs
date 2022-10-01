@@ -12,7 +12,7 @@ public class End : MonoBehaviour
     [Header("Canvas")]
     public GameObject ScorePage;
     public GameObject ButtonPage;
-    public GameObject KnowMore;
+    //public GameObject KnowMore;
 
     [Header("Button")]
     public GameObject Back;
@@ -22,14 +22,14 @@ public class End : MonoBehaviour
         Restart();
         ScorePage.SetActive(false);
         ButtonPage.SetActive(true);
-        KnowMore.SetActive(false);
+        //KnowMore.SetActive(false);
         Back.SetActive(false);
     }
 
     public void ToThirdPage()
     {
         ButtonPage.SetActive(false);
-        KnowMore.SetActive(true);
+        //KnowMore.SetActive(true);
         Back.SetActive(true);
 
     }
@@ -44,7 +44,7 @@ public class End : MonoBehaviour
     public void show_score()
     {
         Score.GetComponent<Text>().text = "分數： " + Unbreakable.presseed_True + "/" + Unbreakable.pressed_time;
-        Invoke("ToSecondPage", 3); 
+        
     }
 
     // Start is called before the first frame update
@@ -52,8 +52,9 @@ public class End : MonoBehaviour
     {
         //Score.GetComponent<Text>().text = "分數： " + Unbreakable.presseed_True + "/" + Unbreakable.pressed_time;
         ButtonPage.SetActive(false);
-        KnowMore.SetActive(false);
+        //KnowMore.SetActive(false);
         Show_Score?.Invoke();
+        Invoke("ToSecondPage", 3);
     }
 
     // Update is called once per frame

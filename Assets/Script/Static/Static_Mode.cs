@@ -28,7 +28,7 @@ public class Static_Mode : MonoBehaviour
         }
 
         timer += Time.deltaTime;
-        if(timer >= 10)
+        if(timer >= 20)
         {
             Go = true;
         }
@@ -37,6 +37,7 @@ public class Static_Mode : MonoBehaviour
     public void GoBack()
     {
         SceneManager.LoadScene("Begin");
+        Unbreakable.skip = false;
     }
 
     public void Clone()
