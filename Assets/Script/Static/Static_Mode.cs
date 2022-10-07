@@ -8,30 +8,13 @@ public class Static_Mode : MonoBehaviour
     public List<GameObject> Photos;
     public Transform Clone_Spawpoint;
 
-    public float timer;
-    public bool Go = true;
+    //public float timer;
+    //public bool Go = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Go)
-        {
-            Clone();
-            timer = 0;
-            Go = false;
-        }
-
-        timer += Time.deltaTime;
-        if(timer >= 20)
-        {
-            Go = true;
-        }
+        Clone();
     }
 
     public void GoBack()
@@ -44,6 +27,11 @@ public class Static_Mode : MonoBehaviour
     {
         int Random_num = Random.Range(0, 5);
         Instantiate(Photos[Random_num], Clone_Spawpoint);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Clone();
     }
 
 }

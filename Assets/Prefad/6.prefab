@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeletePoint: {fileID: 0}
-  speed: 0.001
+  speed: 0.006
 --- !u!1 &4193472175794130021
 GameObject:
   m_ObjectHideFlags: 0

@@ -179,4 +179,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeletePoint: {fileID: 0}
-  speed: 0.001
+  speed: 0.006

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeletePoint: {fileID: 0}
-  speed: 0.001
+  speed: 0.006
 --- !u!50 &7167299821553062891
 Rigidbody2D:
   serializedVersion: 4

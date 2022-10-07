@@ -19,6 +19,9 @@ public class Begin : MonoBehaviour
 
     float StaticTime;
 
+    [Header("Rule")]
+    public GameObject PassRule;
+
     public void Set(string a)
     {
         Unbreakable.diff = a;
@@ -54,6 +57,11 @@ public class Begin : MonoBehaviour
         Static_mode = true;
     }
 
+    void Show()
+    {
+        PassRule.GetComponent<Button>().enabled = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -85,7 +93,9 @@ public class Begin : MonoBehaviour
                     Icon.SetActive(false);
                     Content.SetActive(false);
                     rule.SetActive(true);
-                    Invoke("ChooseDifficulty", 5);
+
+                    
+                    
                 }
                 Hi = false;
                 //SceneManager.LoadScene("Highlight");
