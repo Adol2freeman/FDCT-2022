@@ -14,3 +14,7 @@ https://play.unity.com/mg/other/ftcd_v-1
 # Notice
 加tag true 和 False
 
+# 圖片
+<img width="1440" alt="Screenshot 2022-10-05 at 21 52 07" src="https://user-images.githubusercontent.com/103558923/200550365-4f8a6306-851d-4c55-85b4-aa06eeff95ea.png">
+<img width="959" alt="Screenshot 2022-10-09 at 22 32 34" src="https://user-images.githubusercontent.com/103558923/200550425-bd05376b-3594-4f92-99d6-1854e417af6e.png">
+<img width="952" alt="Screenshot 2022-10-09 at 22 49 42" src="https://user-images.githubusercontent.com/103558923/200550496-1918fbdd-1aba-40b9-a552-8cb0a8524e69.png">
